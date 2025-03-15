@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dine | Booking Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="booking-page">
+    <!-- #region Header -->
+    <header>
+      <section class="container">
+        <a href="./index.html"><img src="./images/logo.svg" alt="" /></a>
+        <div>
+          <h1>Reservations</h1>
+
+          <p>
+            We can’t wait to host you. If you have any special requirements
+            please feel free to call on the phone number below. We’ll be happy
+            to accommodate you.
+          </p>
+        </div>
+      </section>
+    </header>
+    <!-- #endregion Header -->
+
+    <main>
+      <div class="container">
+        <form action="">
+          <input class="error" type="text" placeholder="Name" />
+          <input class="error" type="email" placeholder="Email" />
+          <!-- <input type="date" placeholder="Pick a date" />
+          <input type="time" placeholder="Pick a time" /> -->
+          <div class="flex-form">
+            <label class="error" for="month">Pick a date</label>
+            <input class="error" type="number" id="month" name="month" placeholder="MM" />
+            <input class="error" type="number" id="day" name="day" placeholder="DD" />
+            <input class="error" type="number" id="year" name="year" placeholder="YYYY" />
+          </div>
+          <div class="flex-form">
+            <label class="error" for="hours">Pick a time</label>
+            <input class="error" type="number" id="hours" name="hours" placeholder="09" />
+            <input class="error" type="number" id="minutes" name="minutes" placeholder="00" /> 
+            <select name="day-range" id="">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+          
+
+            <div class="counter">
+              <!-- <p>sdsds</p> -->
+              <button></button>
+            <div>
+              <span>4</span> people
+            </div>
+              <button></button>
+              <!-- <p>sdsdsd</p> -->
+            </div>
+
+            <button type="submit">Make Reservation</button>
+         
+        </form>
+      </div>
+    </main>
+
+    <!-- #region Footer -->
+    <footer>
+      <div class="footer-bottom container flx">
+        <img src="./images/logo.svg" alt="Logo of Dine restaurant" />
+
+        <address class="flx">
+          <a href="#"> Marthwaite, Sedbergh<br />Cumbria </a>
+          <a href="tel:+00441234567">+0044 123 4567</a>
+        </address>
+
+        <article>
+          <h2>Open Times</h2>
+          <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+          <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+        </article>
+      </div>
+    </footer>
+    <!-- #endregion -->
+  </body>
+</html>
